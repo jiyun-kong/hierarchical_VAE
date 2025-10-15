@@ -1,0 +1,16 @@
+# Z_DIM 실험 validation 설정
+valid_dataset_path: '/scratch2/hayeonjeong/nvae/dataset/val'
+
+# 모델 설정 (기본값, 실제로는 exp_name에서 자동 추출됨)
+z_dim: 512  # 기본값, 실제로는 exp_name에서 추출
+input_size: 64  # CelebA: 64
+
+# Validation 설정
+val_batch_size: 64
+num_workers: 4
+
+# FID 계산 설정
+calculate_fid: true  # FID 계산 활성화
+fid_samples: 1000  # 빠른 계산을 위해 샘플 수 줄임 (기본: 5000)
+fid_batch_size: 64  # FID 계산용 batch size
+fid_dims: 2048  # FID 계산용 feature dimension 

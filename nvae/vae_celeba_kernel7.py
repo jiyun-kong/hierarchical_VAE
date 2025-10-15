@@ -1,8 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from nvae.decoder import Decoder
-from nvae.encoder import Encoder
+from nvae.decoder_kernel7 import Decoder
+from nvae.encoder_kernel7 import Encoder
 from nvae.losses import recon, kl
 from nvae.utils import reparameterize
 

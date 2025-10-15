@@ -1,0 +1,19 @@
+batch_size: 256
+z_dim: 512
+train_dataset_path: /scratch2/hayeonjeong/nvae/dataset/train
+valid_dataset_path: /scratch2/hayeonjeong/nvae/dataset/val
+test_dataset_path: /scratch2/hayeonjeong/nvae/dataset/test
+epochs: 100
+n_cpu: 4
+lr: 0.01
+
+model_variant: kernel7
+
+# exp_name: baseline_batch128_zdim256_celebA  # 자동 생성됨
+wandb_project: hierarchical-vae
+
+# 저장 빈도 설정
+save_image_every: 500  # step마다 이미지 저장
+save_checkpoint_every: 10  # 에포크마다 체크포인트 저장
+
+# pretrained_weights: /path/to/ckpt.pth
